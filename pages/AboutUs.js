@@ -1,4 +1,3 @@
-// pages/AboutUs.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -21,16 +20,16 @@ const AboutUs = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-between',  // This will push content to the top and bottom
+    justifyContent: 'space-between',  
     alignItems: 'center',
     backgroundColor: '#f0f0f0',
     padding: 20,
   },
   contentContainer: {
     flex: 1,
-    justifyContent: 'center',  // Center the content vertically
+    justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,  // Adds spacing between content and footer
+    marginBottom: 20,  
   },
   heading: {
     fontSize: 32,
@@ -47,7 +46,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#777',
     marginTop: 20,
-    fontStyle: 'italic', // Optional: make the text italic
+    fontStyle: 'italic', 
   },
 });
 
