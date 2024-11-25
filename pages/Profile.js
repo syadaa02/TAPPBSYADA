@@ -1,13 +1,10 @@
-// Profile.js
-
 import React, { useEffect, useState } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, Linking } from 'react-native';
 
-const Profile = ({ navigation }) => { // Use the navigation prop here
+const Profile = ({ navigation }) => { 
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    // Fetch GitHub data
     fetch('https://api.github.com/users/syadaa02')
       .then((response) => response.json())
       .then((data) => setUserData(data))
@@ -34,7 +31,7 @@ const Profile = ({ navigation }) => { // Use the navigation prop here
       {/* Button to navigate to About Us page */}
       <TouchableOpacity
         style={styles.aboutButton}
-        onPress={() => navigation.navigate('AboutUs')} // Navigate to AboutUs screen
+        onPress={() => navigation.navigate('AboutUs')} 
       >
         <Text style={styles.aboutButtonText}>About Us</Text>
       </TouchableOpacity>
