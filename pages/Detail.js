@@ -7,20 +7,17 @@ const Detail = ({ navigation, route }) => {
 
   return (
     <ScrollView style={styles.container}>
-      {/* Header with back arrow and title */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
           <MaterialIcons name="arrow-back" size={24} color="black" />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>WartaNet</Text>
       </View>
-
-      {/* Article Image */}
+  
       <Image source={{ uri: article.urlToImage || 'default-image.jpg' }} style={styles.image} />
       <Text style={styles.title}>{article.title}</Text>
       <Text style={styles.content}>{article.description || 'No description available.'}</Text>
 
-      {/* Button to read full article with custom styling */}
       <TouchableOpacity
         style={styles.readButton}
         onPress={() => Linking.openURL(article.url)}
@@ -40,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 20,
-    paddingTop: 40, // Added padding to push the header down
+    paddingTop: 40, 
   },
   backButton: {
     marginRight: 10,
@@ -67,7 +64,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   readButton: {
-    backgroundColor: '#3A8FB7', // Button background color
+    backgroundColor: '#3A8FB7',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 15,
