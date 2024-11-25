@@ -1,4 +1,3 @@
-// Home.js
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, FlatList, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
