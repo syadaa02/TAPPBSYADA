@@ -3,7 +3,7 @@ import { View, Text, FlatList, TouchableOpacity, StyleSheet, Image } from 'react
 import { useNavigation } from '@react-navigation/native';
 
 const CategoryNews = ({ route }) => {
-  const { category } = route.params; // Receive category as a parameter
+  const { category } = route.params; 
   const [news, setNews] = useState([]);
   const navigation = useNavigation();
 
@@ -29,8 +29,7 @@ const CategoryNews = ({ route }) => {
   }, [category]);
 
   const handleCardPress = (item) => {
-    // Navigate to the Detail screen with the article data as params
-    navigation.navigate('Detail', { article: item });
+       navigation.navigate('Detail', { article: item });
   };
 
   return (
@@ -69,7 +68,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
     paddingBottom: 10,
-    flex: 1,  // Makes the entire card clickable
+    flex: 1,  
   },
   newsImage: {
     width: 100,
